@@ -27,3 +27,15 @@
     secret = uhTcjsdsdkfk34rg3gvbODU
     #企业ID
     corpid = wwsd2fwef4gahy500
+    
+### 编译
+
+    centos
+    yum install golang -y
+    cd
+    mkdir go{pkg,bin,src}
+    cd go/src
+    go get github.com/yangyouwei/wechat
+    go get github.com/Unknwon/goconfig
+    cd github.com/yangyouwei/wechat
+    go build wechat.go
