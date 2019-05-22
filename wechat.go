@@ -91,12 +91,6 @@ func init() {
 }
 
 func main() {
-
-	fmt.Println(secret)
-	fmt.Println(sendurl)
-	fmt.Println(agid)
-	fmt.Println(secret)
-	fmt.Println(corpid)
 	args := os.Args
 
 	if args == nil || len(args) < 2 {
