@@ -52,7 +52,7 @@ var Usage = func() {
 }
 
 func init() {
-	cfg, err := goconfig.LoadConfigFile("config.ini")
+	cfg, err := goconfig.LoadConfigFile("conf.ini")
 	if err != nil {
 		log.Println("读取配置文件失败[config.ini]")
 		return
