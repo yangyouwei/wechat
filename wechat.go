@@ -62,41 +62,36 @@ func init() {
 	if err != nil {
 		log.Fatalf("无法获取键值（%s）：%s", "sendurl", err)
 	}
-	log.Printf("%s > %s: %s", "super", "sendurl", sendurl)
+
 	//
 	get_token, err = cfg.GetValue("main", "get_token")
 	if err != nil {
 		log.Fatalf("无法获取键值（%s）：%s", "get_token", err)
 	}
-	log.Printf("%s > %s: %s", "super", "get_token", get_token)
+
 	//
 	corpid, err = cfg.GetValue("main", "corpid")
 	if err != nil {
 		log.Fatalf("无法获取键值（%s）：%s", "corpid", err)
 	}
-	log.Printf("%s > %s: %s", "super", "corpid", corpid)
+
 	//
 	agid, err = cfg.Int("main", "agid")
 	if err != nil {
 		log.Fatalf("无法获取键值（%s）：%s", "agid", err)
 	}
-	log.Printf("%s > %s: %s", "super", "agid", agid)
+
 	//
 	secret, err = cfg.GetValue("main", "secret")
 	if err != nil {
 		log.Fatalf("无法获取键值（%s）：%s", "secret", err)
 	}
-	log.Printf("%s > %s: %s", "super", "secret", secret)
+
 
 }
 
 func main() {
 
-	fmt.Println(secret)
-	fmt.Println(sendurl)
-	fmt.Println(agid)
-	fmt.Println(secret)
-	fmt.Println(corpid)
 	args := os.Args
 
 	if args == nil || len(args) < 2 {
