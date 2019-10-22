@@ -23,9 +23,9 @@
     #企业微信中建立的监控应用的AgentId
     agid = 1000001
     #企业微信中建立的监控应用的secret
-    secret = uhTcjsdsdkfk34rg3gvbODU
+    secret = uhTcjg3gvbODU
     #企业ID
-    corpid = wwsd2fwef4gahy500
+    corpid = wwshy500
     
 ### 编译
 
